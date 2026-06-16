@@ -1,0 +1,299 @@
+/*CSS Reset*/
+*{
+       margin:0;
+       padding:0;
+       box-sizing:border-box;
+}
+
+/*General Styling*/
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+     font-family:Arial,"Helvetica Neue",Helvetica,sans-serif;
+     letter-spacing: normal;
+     background-color: lightsteelblue;
+     color: grey;
+     line-height: 1.6;
+
+}
+
+header{
+        background-color: rgb(94, 113, 108);
+        padding: 20px;
+        text-align: center;
+
+}
+
+h1 {
+    color: rgb(91, 77, 80);
+    font-size: 2rem;
+
+}
+
+footer{
+    background-color: rgb(45, 48, 56);
+    text-align: center;
+    font-weight: bolder;
+}
+
+.navigation{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    background-color: rgb(245, 244, 243);
+    align-items: center;
+}
+
+.navigation a{
+    text-decoration: none;
+    display: block;
+}
+
+.navigation :hover{
+    background-color: rgb(233, 230, 227);
+}
+
+img{ 
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+/*container for the webpage layout*/
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    /*background-color: red;*/
+    padding: 20px;
+}
+
+.container div{
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 330px) and (max-width: 768px){
+
+    body{
+        background-color: rgb(139, 150, 165);
+    }
+}
+
+.navigation{
+    display: block;
+    list-style-type: none;
+    gap: 20px;
+    background-color: blanchedalmond;
+    text-align: center;
+    font-size: 8pt;
+}
+ 
+.navigation a{
+    text-decoration: none;
+    display: block;
+    padding: 10pt;
+}
+
+.navigation a:hover{
+    background-color: burlywood;
+
+}
+
+h1{
+    font-size: 14pt;
+}
+
+h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 1rem;
+    color:rgb(69, 65, 65)
+}
+
+/*Navigation (Flexbox)*/
+.navigation{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+
+    list-style:none;
+    background-color:rgb(245,244,243);
+    padding:15px;
+}
+
+/*Desktop*/
+.navigation a{
+    text-decoration:none;
+    color:black;
+    padding:10px 15px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.navigation a:hover{
+    background-color:rgb(233,230,227);
+}
+
+/*Grid layout*/
+.container{
+    display:grid;
+
+    /* Desktop = 3 columns */
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:20px;
+    padding:20px;
+}
+
+/* GRID ITEMS */
+.container div{
+    background-color:bisque;
+    padding:15px;
+    border-radius:15px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.image-box{
+    background-color:rgb(204,215,215);
+    padding:10px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.image-box img{
+    width:100%;
+    max-width:250px;
+    height:auto;
+    border-radius:15px;
+}
+
+
+button{
+    background-color: azure;
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: rgb(204,215,215);
+
+}
+
+/*Tablet*/
+@media (max-width: 768px){
+
+    body{
+        background-color: rgb(144, 207, 218);
+    }
+
+    /*Navigation becomes vertical*/
+    .navigation{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    h1{
+        font-size: 1.8rem;
+    }
+
+    p{
+        font-size: 0.95rem;
+
+    }
+}
+
+/*Mobile*/
+@media (max-width: 500px){
+    body{
+        background-color: rgb(255, 255, 255);
+        
+    }
+
+    /*Single ccolumn layout*/
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+/*Mobile Navigation*/
+   @media (max-width: 500px){
+
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .navigation li{
+        width: 100%;
+    }
+
+    navigation a{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+
+    }
+
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
+
+    p{
+        font-size: 0.9rem;
+    }
+
+    button{
+        width: 100%;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+ 
+.image-box{
+    background-color: rgb(204, 215, 215);
+    padding: 10px;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.image-box img{
+    width: 200px;
+    display: block;
+
+}
+
+.image{
+    width: 400px;
+}
+
+@media (max-width: 600px){
+    .image-box img{
+        width: 100%;
+    }
+}
