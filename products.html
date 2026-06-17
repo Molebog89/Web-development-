@@ -13,9 +13,9 @@
      <meta name="keywords" content="Iphone,Steve Jobs,Steve Wozniak,Ipod,Apple,Company,Ipad,Technology,Photo,Pictures,Camera,Quailty
      Price,Resolution,Connection">
     <script src=""></script>
+ <link rel="stylesheet" href="css_assets/mystyles.css">
 
-    <link rel="stylesheet" href="css_assets/mystyles.css">
-    <title>Apple Products</title>
+    <title>Products | Istore Pretoria | Devices and Accessories</title>
     <!-- jQuery library and files that load lightbox, -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -34,90 +34,293 @@ Gallery navigation, Image animations-->
 </head>
 <body>
    <HEADER>
+    
      <h1><center><u>Apple Products</u></center></h1>
      <center> <img src="images/logo.png" alt="Apple logo" height="150" width="300"></center>
-    <NAV>
-      <table border="1" width="1500">
-        <tr>
-          <td><a href="index.html">Home</a></td>
-          <td><a href="about_us.html">About</a></td> 
-          <td><a href="products.html">Products</a></td>
-          <td><a href="enquiries.html">Enquiries</a></td>
-          <td><a href="contact.html">Contact</a></td>
-        </tr>   
-        </table>
-        
-    </NAV>
-   </HEADER> 
+    
+<script>
+document.getElementById("menuBtn").addEventListener("click", function () {
+  document.getElementById("navLinks").classList.toggle("show");
+});
+</script>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about_us.html">About Us</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="enquiries.html">Enquiries</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<style>
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  background-color: #333;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+</style>
+<style>
+@media (max-width: 992px) {
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+}
+</style>
+<style>
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar a {
+    width: 100%;
+    padding: 12px;
+  }
+}
+</style>
+
    <!--Images in the products-->
-   <div class="produts">
+   <div class="products">
      <!--small image-->
-     <a href="images/gallary3_charlie_large.JPG" data-lightbox="myproducts" data-title="gallery3_charlie">
+     <a href="images/gallery1_various apple products.png" data-lightbox="myproducts" data-title="gallery3_various Apple products">
       <!--bigger image loaded after clicking the big image-->
-      <img src="images/gallery3_charlie.jpg" alt="charlie the two toned cat">
+      <img src="images/gallery1_various apple products.png" alt="the variety of Apple products">
      </a>
 
      <!--small image-->
-       <div class="products">
-        <a href="gallery1_fergie_lage.jpg" data-lightbox="myproducts" data-title="gallery1_charlie">
+        <a href="images/gallery3_different apple products.jpg" data-lightbox="myproducts" data-title="gallery3_evolution of Apple products">
           <!--bigger image loaded after clicking the big picture-->
-          <img src="images/gallery1_fergie.jpg" alt="fergie the ginger cat">
+          <img src="images/gallery3_different apple products.jpg" alt="evolution of Apple products">
         </a>
         
-      </a>
-   <hr size="9">
+     <!--small image-->
+        <a href="images/gallery2_Latest Iphones.jpg" data-lightbox="myproducts" data-title="gallery2_Latest">
+          <!--bigger image loaded after clicking the big picture-->
+          <img src="images/gallery2_Latest Iphones.jpg" alt="Latest Apple Iphones">
+        </a>
+        
+     <!--small image-->
+        <a href="images/gallery4_transformation of latest products.jpg" data-lightbox="myproducts" data-title="gallery4_transformation">
+          <!--bigger image loaded after clicking the big picture-->
+          <img src="images/gallery4_transformation of latest products.jpg" alt="Transformation of Apple products">
+        </a>
+   </div>
+        
+  <hr size="9">
    <main>
-     <p>Apple offers a variety of different products from:</p>
-       
-       Iphones
-        Ipad
-        Macbook
-        Ipod
-        Smartwatches
-       
-        <ol type="i">
-        <li> <img src="images/Iphone.jpg" alt="Latest iphones"></li>
-         <p><center> Latest edition of Iphones are released yearly due to the high demand 
-          of Apple products required by the public/consumers.These Iphones are used as a 
-          multi-purpose tool making calls,taking high quailty pictures/videos,and using siri 
-          an AI assitent to help you with anything you are confused with.
-        </center> </p>
-       <li><img src="images/ipad.jpg" alt="Different type of tablet"></li>
-       <p><center>Apple offers different types of products one of which being The Apple tablet or 
-        commonly known as the Ipad.It is considered a bigger version of an iphone commonly used to watch
-        movies play games and interact with the outside world.
-       </center></p>
-       <center>
-       <li><img src="images/IMAC.jpg" alt="latest Apple computer"></li>
-       <p>At Apple we even offer non-portable devices one of which being the Apple 
-        desktop but known as the Imac an at home system that is used specifically 
-        non-portable loctions
-       </p>
-       </center>
-       <center>
-      <li><img src="images/macbook.jpg" alt="Apple laptop"></li>
-      <p>Apple even offers an alyernative if you want a portable computing device 
-        that can be taken anywhere if you feel that the IMAC is too big.
-      </p>
-      </center>
-      <center>
-       <li><img src="images/SMARTWATCH.jpg" alt="Apple smart watch"></li>
-       <p>The Apple smartwatch not only tracks location and your steps to use when exercising 
-        but it can also be used to make calls,take pictures/videos and you cn even play games
-        on it as it is a multiple technological tool.
-      </p>
-       </center>
-       <center>
-       <li><img src="images/brett-jordan-wrZWxWGJdWc-unsplash.jpg" alt="Apple ipod"></li>
-       <p>The ipod is known as the old fashioned wa of listening to music when you get 
-        tired of music ads and/or your phone has switched off to enjoy some peaceful time 
-        without distractions.
-       </p>
-       </center>
-        </ol>
+    <h1>Apple Products</h1>
 
-   </main>
-   <footer>
+
+    <title>Apple Products</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f7;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        p {
+            text-align: center;
+            max-width: 900px;
+            margin: 10px auto;
+            color: #333;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 40px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+        }
+
+        .card-content p {
+            text-align: left;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .card-content a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #0071e3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .card-content a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: grey;
+        }
+    </style>
+    <style>
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.products img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.products img:hover {
+  transform: scale(1.05);
+}
+</style>
+
+
+<main>
+
+    <p>
+        Apple offers a variety of different products including iPhones, iPads,
+        MacBooks, iMacs, Apple Watches, and iPods.
+    </p>
+
+    <div class="products-grid">
+
+        <!-- iPhone -->
+        <div class="product-card">
+            <img src="images/Iphone.jpg" alt="Apple iPhone">
+            <div class="card-content">
+                <h3>iPhone</h3>
+                <p>
+                    Latest iPhones are released yearly due to high demand.
+                    They are used for calls, photography, videos, and Siri, Apple’s AI assistant.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+
+        <!-- iPad -->
+        <div class="product-card">
+            <img src="images/ipad.jpg" alt="Apple iPad">
+            <div class="card-content">
+                <h3>iPad</h3>
+                <p>
+                    A larger version of the iPhone used for movies, games, and productivity.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+
+        <!-- iMac -->
+        <div class="product-card">
+            <img src="images/IMAC.jpg" alt="Apple iMac">
+            <div class="card-content">
+                <h3>iMac</h3>
+                <p>
+                    A powerful desktop computer designed for home and professional use.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+
+        <!-- MacBook -->
+        <div class="product-card">
+            <img src="images/macbook.jpg" alt="Apple MacBook">
+            <div class="card-content">
+                <h3>MacBook</h3>
+                <p>
+                    A portable laptop designed for performance and mobility.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+
+        <!-- Apple Watch -->
+        <div class="product-card">
+            <img src="images/SMARTWATCH.jpg" alt="Apple Watch">
+            <div class="card-content">
+                <h3>Apple Watch</h3>
+                <p>
+                    Tracks fitness, health, and allows calls, messages, and apps from your wrist.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+
+        <!-- iPod -->
+        <div class="product-card">
+            <img src="images/Apple ipod.jpg" alt="Apple iPod">
+            <div class="card-content">
+                <h3>iPod</h3>
+                <p>
+                    A classic music device used for offline listening without distractions.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+
+
+</main>
     <p><center><i><font color="grey">Apple-The company of the future</font></i></center></p>
  
     

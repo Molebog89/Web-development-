@@ -4,26 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css_assets/mystyles.css">
-    <title><Apple - Contact</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <title>Contact Us | iStore Pretoria | Get Support & Store Info</title>
+      <!-- jQuery library and files that load lightbox, -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- External javascript saved in js_assets folder -->
+<script src="js_assets/myjavascript.js"></script>
+
+<!-- Lightbox2 CSS - Provides the styling for the Lightbox, Image positioning, Next/Previous 
+buttons, Close button (×), Captions. Without this file, the Lightbox may still open but will be unstyled.-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+
+<!--Lightbox2 js function (was build using jQuery, to function it needs jQuery to be loaded 
+first). Contains the Lightbox functionality, Opening images in a popup, Closing images,
+Gallery navigation, Image animations-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </head>
 <body>
    <HEADER>
      <h1><center><u>Contact</u></center></h1>
      <center><img src="images/logo.png" alt="Apple logo" height="150" width="300"></center>
        
-    <NAV>
-        <table border="1" width="1500">
-        <tr>
-          <td><a href="index.html">Home</a></td>
-          <td><a href="about_us.html">About</a></td> 
-          <td><a href="products.html">Products</a></td>
-          <td><a href="enquiries.html">Enquiries</a></td>
-          <td><a href="contact.html">Contact</a></td>
-        </tr>   
-        </table>
-    </NAV>
-   </HEADER> 
+   <style>
+#menuBtn {
+  display: none;
+}
+
+nav ul, #navLinks {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  #menuBtn {
+    display: block;
+  }
+
+  #navLinks {
+    display: none;
+    flex-direction: column;
+  }
+
+  #navLinks.show {
+    display: flex;
+  }
+}
+</style>
+<script>
+document.getElementById("menuBtn").addEventListener("click", function () {
+  document.getElementById("navLinks").classList.toggle("show");
+});
+</script>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about_us.html">About</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="enquiries.html">Enquiries</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<style>
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  background-color: #333;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+</style>
+<style>
+@media (max-width: 992px) {
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+}
+</style>
+<style>
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar a {
+    width: 100%;
+    padding: 12px;
+  }
+}
+</style>
    <hr size="9">
+   
    <main>
     <H1>Contact Us</H1>
       <h2><u>Contact us for assistence</u></h2>
@@ -37,34 +133,119 @@
       <p>For tech support email:suapportmail@apple.com"</p>
 
       <h2>Find us at our branches</h2>
+      <div id="map" style="height: 450px; width: 100%;"></div>
       <!--This code is is to input a live map that will give the viewer a location of all the nearest Istores for the user to purchase items-->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d28750.78374053522!2d28.196863999999998!3d-25.742540799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1e95610bd0eff749%3A0xe9cfd57fe595706b!2siStore%20Brooklyn%20Mall%2C%20328%20Bronkhorst%20St%2C%20Nieuw%20Muckleneuk%2C%20Pretoria%2C%200181!3m2!1d-25.771511999999998!2d28.234565!5e0!3m2!1sen!2sza!4v1776275503540!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+      <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d28750.78374053522!2d28.196863999999998!3d-25.742540799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1e95610bd0eff749%3A0xe9cfd57fe595706b!2siStore%20Brooklyn%20Mall%2C%20328%20Bronkhorst%20St%2C%20Nieuw%20Muckleneuk%2C%20Pretoria%2C%200181!3m2!1d-25.771511999999998!2d28.234565!5e0!3m2!1sen!2sza!4v1776275503540!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d28750.78374053522!2d28.196863999999998!3d-25.742540799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1e955d919be24d4f%3A0xbefbaebfd96035a1!2siStore%20Woodlands%2C%20Garsfontein%20Rd%2C%20Pretorius%20Park%2C%20Pretoria%2C%200081!3m2!1d-25.82333!2d28.313143999999998!5e0!3m2!1sen!2sza!4v1776275813818!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <script>
+  // Center map on Pretoria
+  var map= L.map('map').setView([-25.773, 28.222], 11);
 
-      <h3>Contact form</h3>
+  // Load map tiles
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  // Branch 1: Brooklyn Mall
+  var brooklyn = L.marker([-25.7715, 28.2345]).addTo(map);
+  brooklyn.bindPopup("<b>iStore Brooklyn Mall</b><br>328 Bronkhorst St, Pretoria");
+
+  // Branch 2: Woodlands
+  var woodlands = L.marker([-25.8233, 28.3131]).addTo(map);
+  woodlands.bindPopup("<b>iStore Woodlands</b><br>Garsfontein Rd, Pretoria");
+
+  // Extra interactivity (this helps marks!)
+  map.on('click', function(e) {
+    L.popup()
+      .setLatLng(e.latlng)
+      .setContent("You clicked: " + e.latlng.toString())
+      .openOn(map);
+  });
+  </script>
+  <script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  let valid = true;
+
+  // Clear errors
+  document.getElementById("nameError").innerText = "";
+  document.getElementById("emailError").innerText = "";
+  document.getElementById("messageError").innerText = "";
+
+  let name = document.getElementById("name").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let message = document.getElementById("message").value.trim();
+
+  // Name validation
+  if (name === "") {
+    document.getElementById("nameError").innerText = "Please enter your name";
+    valid = false;
+  }
+
+  // Email validation
+  let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if (email === "") {
+    document.getElementById("emailError").innerText = "Please enter your email";
+    valid = false;
+  } else if (!email.match(emailPattern)) {
+    document.getElementById("emailError").innerText = "Enter a valid email address";
+    valid = false;
+  }
+
+  // Message validation
+  if (message.length < 10) {
+    document.getElementById("messageError").innerText =
+      "Message must be at least 10 characters";
+    valid = false;
+  }
+
+  if (valid) {
+    alert("Message sent successfully!");
+    document.getElementById("contactForm").reset();
+  }
+});
+</script>
+<style>
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+input, textarea {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+}
+</style>
+
+ <h3>Contact form</h3>
       <!--this code is for the user to interact with the website by entering their name-->
-      <form action="/submit-form" method="POST"
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="user_name" required>
+      <form id="contactForm" action="#" method="POST">
+
+  <!-- Name -->
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="user_name" required>
+
+  <!-- Email --><!--this code is for the user to enter their email address-->
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="user_email" required>
+
+  <!-- Message --><!--this code allows the user to enter a message-->
+  <label for="message">Message:</label>
+  <textarea id="message" name="user_message" rows="6" required></textarea>
+
+  <!-- Button -->
+  <button type="submit">Send Message</button>
+
     </form>
-    <!--this code is for the user to enter their email address-->
-    <form>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="user_email" required>
-      </form>
-     <form>
-      <!--this code allows the user to enter a message-->
-      <label for="message">Message:</label>
-      <textarea name="message" id="message" name="user_message" rows="6"></textarea>
-      </form>
-      <form> 
-        <!--this code allows the user to send the message to the company-->
-       <button type="Submit">Send Message</button>
-    </form>
+    <small id="nameError" class="error"></small>
+    <small id="emailError" class="error"></small>
+    <small id="messageError" class="error"></small>
 
+  </main>
 
-
-   </main>
    <footer>
     <p><center><i><font color="grey">Apple-The company of the future</font></i></center></p>
  

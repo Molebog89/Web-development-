@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css_assets/mystyles.css">
-    <title>Rosebank - Enquiries</title>
+    <title>Enquiries | iStore Pretoria | Ask Questions & Product Support</title>
+    <!-- jQuery library and files that load lightbox, -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- External javascript saved in js_assets folder -->
+<script src="js_assets/myjavascript.js"></script>
+
+<!-- Lightbox2 CSS - Provides the styling for the Lightbox, Image positioning, Next/Previous 
+buttons, Close button (×), Captions. Without this file, the Lightbox may still open but will be unstyled.-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+
+<!--Lightbox2 js function (was build using jQuery, to function it needs jQuery to be loaded 
+first). Contains the Lightbox functionality, Opening images in a popup, Closing images,
+Gallery navigation, Image animations-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
     
     
 </head>
@@ -12,18 +27,98 @@
    <HEADER>
      <h1><center>Apple Enquiries</center></h1>
      <center><img src="images/logo.png" alt="Apple logo" height="150" width="300"></center>
-    <NAV>
-        <table border="1" width="1500">
-        <tr>
-          <td><a href="index.html">Home</a></td>
-          <td><a href="about_us.html">About</a></td> 
-          <td><a href="products.html">Products</a></td>
-          <td><a href="enquiries.html">Enquiries</a></td>
-          <td><a href="contact.html">Contact</a></td>
-        </tr>   
-        </table>
-    </NAV>
-   </HEADER> 
+    <style>
+#menuBtn {
+  display: none;
+}
+
+nav ul, #navLinks {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  #menuBtn {
+    display: block;
+  }
+
+  #navLinks {
+    display: none;
+    flex-direction: column;
+  }
+
+  #navLinks.show {
+    display: flex;
+  }
+}
+</style>
+<script>
+document.getElementById("menuBtn").addEventListener("click", function () {
+  document.getElementById("navLinks").classList.toggle("show");
+});
+</script>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about_us.html">About</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="enquiries.html">Enquiries</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<style>
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  background-color: #333;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+</style>
+<style>
+@media (max-width: 992px) {
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+}
+</style>
+<style>
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar a {
+    width: 100%;
+    padding: 12px;
+  }
+}
+</style>
+  
    <main>
      <h3><u><center>Enquire about products or upcomiing products or even 
      questions that you the user might have</center></u></h3>

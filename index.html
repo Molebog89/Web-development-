@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css_assets/mystyles.css">
-    <title>Apple</title>
+    <title>Home | iStore Pretoria | Apple Devices, iPhones & MacBooks</title>
     <!-- jQuery library and files that load lightbox, -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -22,8 +22,12 @@ Gallery navigation, Image animations-->
 </head>
 <body>
    <HEADER>
+    <div class="hero">
+
+    <div class="hero-content">
      <h1><center>Welcome to Apple</center></h1>
-     <center> <img src="images/logo.png" alt="Apple logo" height="150" width="300"></center>
+     <center> 
+      <img src="images/logo.png" alt="Apple logo" height="150" width="300"></center>
     <NAV>
       <table border="1" width="200">
         <tr>
@@ -31,31 +35,100 @@ Gallery navigation, Image animations-->
        <td><a href="products.html">Buy Now</a></td>
       </tr>
       </table>
-       <table border="1" width="1500">
-        <tr>
-          <td><a href="index.html">Home</a></td>
-          <td><a href="about_us.html">About</a></td> 
-          <td><a href="products.html">Products</a></td>
-          <td><a href="enquiries.html">Enquiries</a></td>
-          <td><a href="contact.html">Contact</a></td>
-      </tr>   
-        </table>
     </NAV>
-    <!--Images in the products-->
-   <div class="produts">
-     <!--small image-->
-     <a href="images/gallary3_charlie_large.JPG" data-lightbox="myproducts" data-title="gallery3_charlie">
-      <!--bigger image loaded after clicking the big image-->
-      <img src="images/gallery3_charlie.jpg" alt="charlie the two toned cat">
-     </a>
+    <style>
+#menuBtn {
+  display: none;
+}
 
-     <!--small image-->
-       <div class="products">
-        <a href="gallery1_fergie_lage.jpg" data-lightbox="myproducts" data-title="gallery1_charlie">
-          <!--bigger image loaded after clicking the big picture-->
-          <img src="images/gallery1_fergie.jpg" alt="fergie the ginger cat">
-        </a>
-    <img src="images/Apple company.jpg" alt="The Apple company" height="180" width="1500">
+nav ul, #navLinks {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  #menuBtn {
+    display: block;
+  }
+
+  #navLinks {
+    display: none;
+    flex-direction: column;
+  }
+
+  #navLinks.show {
+    display: flex;
+  }
+}
+</style>
+<script>
+document.getElementById("menuBtn").addEventListener("click", function () {
+  document.getElementById("navLinks").classList.toggle("show");
+});
+</script>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about_us.html">About Us</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="enquiries.html">Enquiries</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<style>
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  background-color: #333;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+</style>
+<style>
+@media (max-width: 992px) {
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+}
+</style>
+<style>
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar a {
+    width: 100%;
+    padding: 12px;
+  }
+}
+</style>
+    
+    <img src="images/Apple company logo.jpg" alt="The Apple company" height="180" width="1500">
    </HEADER> 
    <main>
     <p><b><center>Where the future of technology is in the hands of the makers</center></b></p>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css_assets/mystyles.css">
-    <title>Welcome to Apple</title>
+    <title>About Us | iStore Pretoria | Store Information</title>
     <!-- jQuery library and files that load lightbox, -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -25,34 +25,132 @@ Gallery navigation, Image animations-->
      <h1><center><u>About us</u></center></h1>
      <!--This code is an input to nagivate from webpage to webpage to make it easier for thr viewer-->
     +<center><img src="images/logo.png" alt="Apple logo" height="150" width="300"></center> 
-    <NAV>
-        <table border="1" width="1500">
-        <tr>
-          <td><a href="index.html">Home</a></td>
-          <td><a href="about_us.html">About</a></td> 
-          <td><a href="products.html">Products</a></td>
-          <td><a href="enquiries.html">Enquiries</a></td>
-          <td><a href="contact.html">Contact</a></td>
-        </tr>   
-        </table>
-    </NAV>
-   </HEADER> 
+    <style>
+#menuBtn {
+  display: none;
+}
+
+nav ul, #navLinks {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  #menuBtn {
+    display: block;
+  }
+
+  #navLinks {
+    display: none;
+    flex-direction: column;
+  }
+
+  #navLinks.show {
+    display: flex;
+  }
+}
+</style>
+<script>
+document.getElementById("menuBtn").addEventListener("click", function () {
+  document.getElementById("navLinks").classList.toggle("show");
+});
+</script>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about_us.html">About Us</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="enquiries.html">Enquiries</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<style>
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  background-color: #333;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+</style>
+<style>
+@media (max-width: 992px) {
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+}
+</style>
+<style>
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar a {
+    width: 100%;
+    padding: 12px;
+  }
+}
+</style>
    <!--This code is to add a horizontal line-->
    <hr size="9"/>
+   
    <main>
     <h3><u><b>Welcome to Apple electronics where the future of technology is in your hands</b></u></center></h3>
 
-    <p align="center"> Apple was founded back in 1976 by two college dropouts named Steve Jobs and Steve Wozniak.
+    <div class="apple-history">
+      <div class="container">
+    <p> Apple was founded back in 1976 by two college dropouts named Steve Jobs and Steve Wozniak.
      The interesting part about the foundation of Apple is it was
      made with the goal of transforming people`s view on computers.
-     Not only was most of the early produts of Apple mostly made in early times were produced in 
+     </p>
+     </div>
+     <div>
+     <p>Not only was most of the early produts of Apple mostly made in early times were produced in 
      Steve Jobs`own Garage since there was no budget back when starting the production of Apple.With limited
      space and finaces ,Steve Jobs and Steve Wozniak turned their own vision into reality as Apple started rising 
-     in popularity in the later coming years.</p>
+     in popularity in the later coming years.
+    </p>
+     </div>
     
+     <style>
+.container {
+    display: flex;
+    gap: 30px;
+}
+
+.container > div {
+    flex: 1;
+}
+</style>
+
    <!--this code is to add an image to the website-->
-     <img src="images/founders2.jpg" alt="Steve Jobs and Steve Wozniak in 1976">
-    <img src="images/brett-jordan-wrZWxWGJdWc-unsplash.jpg" alt="Ipod">
+     <img src="images/Founders of Apple Steve Jobs and Partner.jpg" alt="Steve Jobs and Steve Wozniak in 1976">
+    <img src="images/Steve Jobs and Steve Wonziak holding monitor.jpg" alt="Holding monitor">
     <p><center>The initial aim of Apple was to create reduced sizes of computers to make them 
         easier fot people to travel with and to use as an everyday need for people,basically 
         an easy to oprate.Duue to the high demand in Apple products over the years many branches 
@@ -60,7 +158,7 @@ Gallery navigation, Image animations-->
 
     <P><i><u>The first ever Apple device to ever be created was the Apple I in 1976 in Steve Jobs` own garage</u></i></P>
     <center>
-     <img src="images/Apple I.jpg" alt="First ever Apple product">
+     <img src="images/Apple I first product.jpg" alt="First ever Apple product">
     </center>
      <P align="right">
         Later on discovering different devices and experimenting with a 
@@ -68,7 +166,7 @@ Gallery navigation, Image animations-->
         to give us what we know today as the
          macbook,Ipad,Ipod and Iphone the most commonly known
         Apple products.</P>
-        <img src="images/riccardo-valeriana-Mb8R4kZpuX8-unsplash.jpg" alt="Well known Apple products">
+        <img src="images/Macbook with iphone.jpg" alt="Well known Apple products">
      
      <p></p>
         <h2><u><b><center>THE Apple Vision</center></b></u></h2>
