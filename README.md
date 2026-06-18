@@ -25,6 +25,19 @@ leaflet.js
 openstreetmap
 Github
 
+## References
+## References
+
+- Leaflet.js. (2026). *Leaflet Documentation*. Available at: https://leafletjs.com/ [Accessed 18 June 2026].
+
+- OpenStreetMap Contributors. (2026). *OpenStreetMap*. Available at: https://www.openstreetmap.org/ [Accessed 18 June 2026].
+
+- Lightbox2. (2026). *Lightbox2 Documentation*. Available at: https://lokeshdhakar.com/projects/lightbox2/ [Accessed 18 June 2026].
+
+- MDN Web Docs. (2026). *HTML, CSS and JavaScript Documentation*. Available at: https://developer.mozilla.org/ [Accessed 18 June 2026].
+
+- Google Fonts. (2026). *Font Resources*. Available at: https://fonts.google.com/ [Accessed 18 June 2026].
+
 ## Author 
 Molebogeng
 
