@@ -25,6 +25,9 @@ leaflet.js
 openstreetmap
 Github
 
+## Author 
+Molebogeng
+
 ## Objectives
 To create a proffessional and responsive website
 Introduce Apple products and services 
