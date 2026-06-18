@@ -25,7 +25,12 @@ leaflet.js
 openstreetmap
 Github
 
-## References
+## Objectives
+To create a proffessional and responsive website
+Introduce Apple products and services 
+use javascript elements
+deploying this website using Github
+
 ## References
 
 - Leaflet.js. (2026). *Leaflet Documentation*. Available at: https://leafletjs.com/ [Accessed 18 June 2026].
@@ -37,18 +42,4 @@ Github
 - MDN Web Docs. (2026). *HTML, CSS and JavaScript Documentation*. Available at: https://developer.mozilla.org/ [Accessed 18 June 2026].
 
 - Google Fonts. (2026). *Font Resources*. Available at: https://fonts.google.com/ [Accessed 18 June 2026].
-
-## Author 
-Molebogeng
-
-## Objectives
-To create a proffessional and responsive website
-Introduce Apple products and services 
-use javascript elements
-deploying this website using Github
-
-
-
-
-
 
