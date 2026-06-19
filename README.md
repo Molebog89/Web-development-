@@ -33,9 +33,9 @@ deploying this website using Github
 
 ## References
 
--Aaron Jack (2020) CSS in 5 minutes. Available at: https://www.youtube.com/watch?v=Z4pCqK-V_Wo (Accessed: 14 June 2026).
+ -Aaron Jack (2020) CSS in 5 minutes. Available at: https://www.youtube.com/watch?v=Z4pCqK-V_Wo      (Accessed: 14 June 2026).
 
--Bro Code (2023) How to create a CSS navigation bar in 6 minutes! Available at: https://www.youtube.com/watch?v=f3uCSh6LIY0 (Accessed: 19 June 2026).
+-Bro Code (2023) How to create a CSS navigation bar in 6 minutes! Available at:                      https://www.youtube.com/watch?v=f3uCSh6LIY0 (Accessed: 19 June 2026).
 
 - Bro Code (2023) JavaScript tutorial for beginners. Available at: https://www.youtube.com/watch?v=Ihy0QziLDf0 (Accessed: 15 June 2026).
   
