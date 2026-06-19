@@ -6,6 +6,7 @@ inserted another interactive map with pin-point location
 Errors on the contact form
 inserted css to make products more formal looking 
 interactive images one the products page 
+backlinks
 
 
 ### Changed
